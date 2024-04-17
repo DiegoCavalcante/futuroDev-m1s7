@@ -9,26 +9,25 @@
     padding: 1.6rem 0;
     width: 60vw;
     height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "header header sidebar"
+    "content content sidebar"
+    "content content sidebar";
 }
 
-.flex-cl {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 2;
-}
 
 header{
-    background-color: blue;
-    flex-grow: 1;
+    background-color: blue;    
+    grid-area: header;
 }
 
 section{
     background-color: gray;
-    flex-grow: 1;
+    grid-area: sidebar;
 }
 
 #content{
     background-color: black;
-    flex-grow: 10;
+    grid-area: content;
 }
