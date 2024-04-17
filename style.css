@@ -4,31 +4,36 @@
     box-sizing: border-box;
 }
 
-.container{
-    margin: 0 auto;
-    padding: 1.6rem 0;
-    width: 60vw;
+body{
+    width: 100vw;
     height: 100vh;
     display: flex;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    
+    width: 80%;
+    height: 80%;
+    
+    background-color: rgb(206, 206, 206);
+    border-radius: 3rem;
 }
 
 .flex-cl {
+    margin: 0 1.6rem;
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    align-items: center;
+    width: 100%;
 }
 
-header{
-    background-color: blue;
-    flex-grow: 1;
-}
-
-section{
-    background-color: gray;
-    flex-grow: 1;
-}
-
-#content{
-    background-color: black;
-    flex-grow: 10;
+input{
+    width: 20rem;
+    align-items: center;
 }
