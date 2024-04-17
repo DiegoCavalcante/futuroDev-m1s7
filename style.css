@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 1.6rem 0;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+}
+
+.flex-cl {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+header{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+section{
+    background-color: gray;
+    flex-grow: 1;
+}
+
+#content{
+    background-color: black;
+    flex-grow: 10;
+}
